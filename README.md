@@ -1,4 +1,4 @@
-# FormKiQ Webform Examples - Registration Form
+# FormKiQ Webform Examples - Youth Soccer Registration Form
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This repository contains an example of how to create a simple web form and use [FormKiQ Core](https://github.com/formkiq/formkiq-core) to process and store the responses.
@@ -59,3 +59,11 @@ Rather than using the WebFormHandler that comes with the FormKiQ Client SDK, you
 NOTE: only the Public POST /documents Endpoint should be used, as you do not want to expose your FormKiQ Core authentication credentials in client-side code.
 
 # Try It Out
+
+Once you have added your FormKiQ Core HTTP API URL (see the inline comments in index.html for more info), you can test this FormKiQ Web Form out by running http-server:
+
+You can test this FormKiQ Web Form out by running http-server:
+```sh
+npx http-server
+```
+![Screenshot of Registration Form Example](example.png)

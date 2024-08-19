@@ -6,7 +6,7 @@
     <script type="text/javascript" src="./node_modules/formkiq-client-sdk-javascript/dist/web-cjs/formkiq-client-sdk-cjs.js"></script>
     <script src="formScript.js"></script>
 
-    <title>Youth Soccer Team Registration Form</title>
+    <title>Youth Soccer Registration Form</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -73,7 +73,18 @@
         <form action="#" class="fkq-form">
             <div class="form-group">
                 <label for="childName">Child's Full Name:</label>
-                <input type="text" id="childName" name="childName" required>
+                <input type="text" id="childName" name="childName" placeholder="Enter full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="season">Season:</label>
+                <select id="season" name="season" required>
+                    <option value="">Select</option>
+                    <option value="spring">Annual</option>
+                    <option value="summer">Summer (May-August)</option>
+                    <option value="fall">Fall (September-December)</option>
+                    <option value="winter">Winter (January-April)</option>
+                </select>
             </div>
 
             <div class="form-group">
@@ -95,22 +106,22 @@
 
             <div class="form-group">
                 <label for="parentName">Parent/Guardian Name:</label>
-                <input type="text" id="parentName" name="parentName" required>
+                <input type="text" id="parentName" name="parentName" placeholder="Enter full name" required>
             </div>
 
             <div class="form-group">
                 <label for="email">Parent/Guardian Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
             </div>
 
             <div class="form-group">
                 <label for="phone">Parent/Guardian Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7891" required>
             </div>
 
             <div class="form-group">
                 <label for="emergencyContact">Emergency Contact Name:</label>
-                <input type="text" id="emergencyContact" name="emergencyContact" required>
+                <input type="text" id="emergencyContact" name="emergencyContact" placeholder="Enter full name" required>
             </div>
             
             <div class="form-group">
@@ -120,12 +131,12 @@
 
             <div class="form-group">
                 <label for="emergencyPhone">Emergency Contact Phone Number:</label>
-                <input type="tel" id="emergencyPhone" name="emergencyPhone" required>
+                <input type="tel" id="emergencyPhone" name="emergencyPhone" placeholder="123-456-7891" required>
             </div>
 
             <div class="form-group">
                 <label for="experience">Years of Soccer Experience:</label>
-                <input type="number" id="experience" name="experience" min="0" max="15" required>
+                <input type="number" id="experience" name="experience"  placeholder="0" min="0" max="17" required>
             </div>
 
             <div class="form-group">
@@ -167,7 +178,7 @@
                     <option value="installment">I would like to discuss installment plans</option>
                     <option value="assistance">I would like information about financial assistance options</option>
                 </select>
-            </div> 
+            </div>
             <input type="submit" value="Register">
         </form>
     </div>
